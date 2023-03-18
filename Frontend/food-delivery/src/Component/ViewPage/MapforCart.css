@@ -1,0 +1,15 @@
+.Map_1{
+
+     /* display: inline-block; */
+
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 10px;
+     /* margin-bottom: 25%; */ 
+}
+.Map_11{
+
+    width: 500px;
+    height: 540px;
+
+}
