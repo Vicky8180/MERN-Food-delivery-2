@@ -8,6 +8,11 @@
     margin-top: 10%;
     background-color: rgb(255, 255, 255);
 }
+h3{
+     color: rgb(0, 0, 0);
+    font-size:large;
+    font-weight:400;
+}
 
 .Cart_img{
 margin-top: 2%;

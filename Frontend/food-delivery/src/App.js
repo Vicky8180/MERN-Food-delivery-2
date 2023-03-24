@@ -14,7 +14,7 @@ function App() {
       <DisplayArea/>
 <Routes>
 
-  <Route path="/"  elemen={<FirstPage/>}/>
+  <Route path="/"  element={<FirstPage/>}/>
   <Route path="/filters1" element={<MapforCartlog/>}/>
 </Routes>
 

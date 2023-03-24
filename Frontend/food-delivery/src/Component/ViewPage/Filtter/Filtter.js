@@ -26,12 +26,12 @@ temp()
   },[])
   let [Biryani,setBiryani]=useState([]);
   var bir=[];
-function tt(){
+function tt(category){
   
 let t=0;
   data.map(item=>{
 
-    if(item.foodcategory==="Biryani"){
+    if(item.foodcategory===category){
       // setBiryani(...Biryani,item)
       bir.push(item);
     }
@@ -43,7 +43,9 @@ let t=0;
   lolu.push(bir)
   // console.log(bir)
   // navigate("/filters1" , {state:{biryaniop:bir}})
-  navigate("/filters1" , {state:lolu})
+  navigate("/filters1" , {state:bir})
+
+  // navigate("/filters1" , {state:lolu})
 }
 
 
@@ -55,31 +57,31 @@ let t=0;
         </div>
         <div className='Filtter_12'>
         <div className='Filtter_121'>
-        <button className='filter_btn' >
+        <button className='filter_btn' onClick={()=>{tt("Biryani")}} >
         <img className='img' src="https://www.pakladies.com/wp-content/uploads/2013/05/Sindhi-Biryani-Recipe-Pakis.jpg"/>
         <h2>Biryani</h2>
         </button>
         </div>
         <div className='Filtter_121'>
-        <button className='filter_btn'>
+        <button className='filter_btn' onClick={()=>{tt("Burger")}}>
         <img className='img' src="https://www.finedininglovers.com/sites/g/files/xknfdk626/files/2022-05/burger.jpg"/>
         <h2>Burger</h2>
         </button>
         </div>
         <div className='Filtter_121'>
-        <button className='filter_btn'>
+        <button className='filter_btn' onClick={()=>{tt("Thali")}}>
         <img className='img' src="https://lh3.googleusercontent.com/asLohKLq0Q6JYKK6Crx9dNYY7bDhez4ePuUXUHJnuJbpifV2hD7HMrZ1XZekmVc9IXXZbyga6OY8G-DRUg51lCWXIQ=w500-rw"/>
         <h2>Thali</h2>
         </button>
         </div>
         <div className='Filtter_121'>
-        <button className='filter_btn'>
+        <button className='filter_btn' onClick={()=>{tt("Pizza")}}>
         <img className='img' src="https://recipes.heart.org/-/media/AHA/Recipe/Recipe-Images/Classic-Margherita-Pizza-with-Whole-Wheat-Pizza-Crust.jpg"/>
         <h2>Pizza</h2>
         </button>
         </div>
         <div className='Filtter_121'>
-        <button className='filter_btn'>
+        <button className='filter_btn' onClick={()=>{tt("Chicken")}}>
         <img className='img' src="https://www.cubesnjuliennes.com/wp-content/uploads/2022/12/Tandoori-Chicken-Recipe.jpg"/>
         <h2>Chicken</h2>
         </button>

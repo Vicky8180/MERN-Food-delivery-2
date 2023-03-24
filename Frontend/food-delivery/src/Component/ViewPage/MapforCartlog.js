@@ -2,11 +2,17 @@ import React, { useEffect, useState } from 'react'
 import Cartlog from './Cartlog/Cartlog';
 import axios from "axios"
 import "./MapforCart.css"
+import "../ViewPage/Display/DisplayArea.css"
 import { useLocation } from 'react-router-dom';
 
 export default function MapforCartlog() {
 
     const [data,setData]=useState([]);
+ const location = useLocation()
+
+
+// const [filterdata,setfilterdata]=useState((location.state)[1])
+
  
     useEffect(()=>{
   const temp=async ()=>{
@@ -22,16 +28,30 @@ export default function MapforCartlog() {
 
     },[])
 
+// console.log((location.state))
+// console.log("locatiodd")
+
+
+useEffect(()=>{
+
+
+
+      if((location.state)!=null){
+        // console.log((location.state).biryaniop)
+      
+        setData((location.state))
+      }
+  
+  
+})
 
 
 
 
+// console.log(("location.state"))
 
-
-
-console.log(data)
-
-
+// console.log(data)
+// console.log(("location.state"))
 
 
 
@@ -60,22 +80,6 @@ console.log(data)
   //   // navigate("/filters1" , {state:{biryaniop:bir}})
   //   navigate("/filters1" , {state:lolu})
   // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -144,10 +148,17 @@ console.log(data)
 
   return (
     <>
+      <div className='Display_1'>
+       <div className='Display_11'> <h1>Order food online in Lovely Professional University,Phagwara</h1></div>
+      <div className='Display_11'>
 <div className='Map_1'>
+{/* <div className='Display_1'> */}
+{/* <div> */}
     {data.map(item=>
-<Cartlog  gdata={item}/>
+<Cartlog  key={item._id} gdata={item}/>
     )}
+        </div>
+        </div>
         </div>
 
 

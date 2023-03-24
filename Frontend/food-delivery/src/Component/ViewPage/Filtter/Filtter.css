@@ -5,19 +5,37 @@
     width: 100%;
     height: 420px;
     margin-bottom: 4%;
+    color: rgb(58, 58, 58);
+    font-size:medium;
+    font-weight: normal;
 }
 .Filtter_12{
     justify-content: space-between;
     display: flex;
     margin-left: 7%;
-    margin-right: 7%;
+    margin-right:7%;
+    /* color: rgb(58, 58, 58);
+    font-size:medium;
+    font-weight: normal; */
+}
+h2{
+    color: rgb(58, 58, 58);
+    font-size:large;
+    font-weight: normal;
+}
+h1{
+    color: rgb(58, 58, 58);
+    font-size:200%;
+    font-weight: normal;
 }
 .Filtter_121{
 
     height: 335px;
     width: 17%;
     background-color: rgb(255, 255, 255);
-    /* border-radius: 100%; */
+    /* color: rgb(60, 60, 60);
+    font-size:medium;
+    font-weight: normal; */
     
 }
 .img{
@@ -35,4 +53,8 @@
 .filter_btn:hover{
     cursor: pointer;
   
+}
+.foodprice{
+    margin-left: 8%;
+    margin-top: -1%;
 }
