@@ -1,11 +1,19 @@
 import React, { useState } from 'react'
 import "./Cartlog.css"
-export default function Cartlog(props) {
 
+import {useNavigate} from "react-router-dom"
+
+export default function Cartlog(props) {
+ 
+    const navigate= useNavigate();
     const temp = props.gdata
     const [Temp, setTemp] = useState(temp);
     // console.log(temp.foodprice)
 
+
+     function Orderfunction(){
+       navigate("/order")
+     }
     return (
 
         <>
@@ -26,7 +34,7 @@ export default function Cartlog(props) {
                     <div className='Cartlog_122'>
                         <h3 className='foodprice'>${temp.foodprice}</h3>
 
-                        <button className='order_btn'>Order</button>
+                        <button className='order_btn' onClick={Orderfunction}>Order</button>
                     </div>
 
 

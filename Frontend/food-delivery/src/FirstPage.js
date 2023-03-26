@@ -8,7 +8,7 @@ export default function FirstPage() {
   return (
     <div>
       {/* <Navbar/> */}
-      {/* <Filtter/> */}
+      <Filtter/>
       {/* <DisplayArea/> */}
       <MapforCartlog/>
     </div>

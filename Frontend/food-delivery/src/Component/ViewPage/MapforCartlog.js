@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Cartlog from './Cartlog/Cartlog';
 import axios from "axios"
+// import Navbar from '../Navbar/Navbar';
 import "./MapforCart.css"
 import "../ViewPage/Display/DisplayArea.css"
 import { useLocation } from 'react-router-dom';
@@ -50,7 +51,7 @@ useEffect(()=>{
 
 // console.log(("location.state"))
 
-// console.log(data)
+console.log(data)
 // console.log(("location.state"))
 
 
@@ -148,6 +149,8 @@ useEffect(()=>{
 
   return (
     <>
+          {/* <Navbar/> */}
+
       <div className='Display_1'>
        <div className='Display_11'> <h1>Order food online in Lovely Professional University,Phagwara</h1></div>
       <div className='Display_11'>
