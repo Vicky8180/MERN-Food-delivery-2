@@ -6,6 +6,7 @@ const dp=require("./db")
 
 
 const FoodDetailsAPI=require("./routers/Food_Details")
+const OrderDetails= require("./routers/OrderDeails")
 
 app.use((req,res,next)=>{
     res.setHeader("Access-Control-Allow-Origin","http://localhost:3000");
@@ -14,7 +15,10 @@ app.use((req,res,next)=>{
     next();
   })
 
+
 app.use('/api', FoodDetailsAPI);
+app.use('/api', OrderDetails);
+
 
 
 
