@@ -7,12 +7,19 @@ export default function Cartlog(props) {
  
     const navigate= useNavigate();
     const temp = props.gdata
-    const [Temp, setTemp] = useState(temp);
-    // console.log(temp.foodprice)
-
+    // const [Temp, setTemp] = useState(temp);
+    // console.log(temp.foodcategory)
+    const fulldata=props.fulldata
+// var fulldataArray=[]
+// fulldata.map(item=>{
+//     if(item.foodcategory===temp.foodcategory){
+//         fulldataArray.push(item)
+//     }
+// })
+// console.log(fulldataArray)
 
      function Orderfunction(){
-       navigate("/order")
+       navigate("/order", {state:{display:temp,fulldata:fulldata}})
      }
     return (
 

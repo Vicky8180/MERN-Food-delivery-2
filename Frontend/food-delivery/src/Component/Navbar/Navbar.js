@@ -9,7 +9,7 @@ const navigate= useNavigate();
 
   function history(){
 
-    navigate("/cart")
+    navigate("/cart2")
   }
   return (
     <div>

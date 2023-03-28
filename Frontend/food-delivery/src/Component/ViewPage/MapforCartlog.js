@@ -158,7 +158,7 @@ console.log(data)
 {/* <div className='Display_1'> */}
 {/* <div> */}
     {data.map(item=>
-<Cartlog  key={item._id} gdata={item}/>
+<Cartlog  key={item._id} gdata={item} fulldata={data}/>
     )}
         </div>
         </div>
