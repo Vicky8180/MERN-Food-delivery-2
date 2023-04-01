@@ -7,13 +7,14 @@ import Cart2 from './Cart2';
 export default function Mapforcartthis() {
     const gottendata= useSelector((state)=>state.CartFormation)
     
+console.log(gottendata)
+console.log("gottendata")
 
-    // const[quantity,setquantity]= useState(1);
-    
+  
 
 
     var [totalsum, settotalsum]=useState(0);
- console.log(gottendata)
+//  console.log(gottendata)
 
 // gottendata.map(item=>(
 //     totalsum=totalsum+item.foodprice
@@ -24,10 +25,10 @@ var tempu= totalsum+data
 settotalsum(tempu)
 // setquantity(data)
  }
- console.log("data1")
+//  console.log("data1")
 
- console.log(totalsum)
- console.log("data2")
+// //  console.log(totalsum)
+//  console.log("data2")
 
 
   

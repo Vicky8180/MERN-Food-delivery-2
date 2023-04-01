@@ -10,3 +10,15 @@ export const RemovetoCart=(removal)=>{
         payload:removal
     }
 }
+export  const Search2=(input)=>{
+    return {
+        type:"SEARCH",
+        payload:input,
+    }
+}
+export  const Search3=(input)=>{
+    return {
+        type:"SEARCH3",
+        payload:input,
+    }
+}

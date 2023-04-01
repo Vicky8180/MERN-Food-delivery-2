@@ -1,13 +1,13 @@
 import React from 'react'
-import Navbar from './Component/Navbar/Navbar';
-import DisplayArea from './Component/ViewPage/Display/DisplayArea';
+import "./index.css"
 import Filtter from './Component/ViewPage/Filtter/Filtter';
 import MapforCartlog from './Component/ViewPage/MapforCartlog';
+import Search from './Component/ViewPage/Search/Search';
 
 export default function FirstPage() {
   return (
-    <div>
-      {/* <Navbar/> */}
+    <div  className='MAIN_Page'>
+      <Search/>
       <Filtter/>
       {/* <DisplayArea/> */}
       <MapforCartlog/>

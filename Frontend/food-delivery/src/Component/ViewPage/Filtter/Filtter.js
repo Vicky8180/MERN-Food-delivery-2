@@ -9,13 +9,13 @@ export default function Filtter() {
 const navigate= new useNavigate();
 
 
-  const [data,setData]=useState([]);
+  const [data8,setData8]=useState([]);
 
   useEffect(()=>{
 const temp=async ()=>{
   try {
       const fetcheddata=(await axios.get('http://localhost:5000/api/getdetails')).data
-      setData(fetcheddata.response);
+      setData8(fetcheddata.response);
   } catch (error) {
       console.log(error)
   }
@@ -24,12 +24,12 @@ const temp=async ()=>{
 temp()
 
   },[])
-  let [Biryani,setBiryani]=useState([]);
+
   var bir=[];
 function tt(category){
   
 let t=0;
-  data.map(item=>{
+  data8.map(item=>{
 
     if(item.foodcategory===category){
       // setBiryani(...Biryani,item)

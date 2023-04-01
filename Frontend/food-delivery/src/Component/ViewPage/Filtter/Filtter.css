@@ -2,12 +2,13 @@
 
 
     background-color: rgb(255, 255, 255);
-    width: 100%;
+    width: 74%;
     height: 420px;
-    margin-top: 4%;
+    margin-top: 1%;
     margin-bottom: 4%;
     color: rgb(58, 58, 58);
     font-size:medium;
+    margin-left: 13%;
     font-weight: normal;
 }
 .Filtter_12{
@@ -15,6 +16,7 @@
     display: flex;
     margin-left: 7%;
     margin-right:7%;
+    background-color: rgb(255, 255, 255);
     /* color: rgb(58, 58, 58);
     font-size:medium;
     font-weight: normal; */
@@ -31,7 +33,7 @@ h1{
 }
 .Filtter_121{
 
-    height: 335px;
+    height: 285px;
     width: 17%;
     background-color: rgb(255, 255, 255);
     /* color: rgb(60, 60, 60);
@@ -40,9 +42,9 @@ h1{
     
 }
 .img{
-    height: 235px;
+    height: 185px;
     width: 100%;
-    margin-top: 20%;
+    margin-top: 10%;
     border-radius: 100%;
 }
 .filter_btn{

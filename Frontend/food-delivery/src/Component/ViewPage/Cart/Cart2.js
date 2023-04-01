@@ -14,12 +14,7 @@ export default function Cart2(props) {
 
 
     function quantitysettingplus(props){
-        // console.log(props)
-        // totalsum=totalsum+props
-    
-        // settotalsum(totalsum+props)
-        // console.log(totalsum)
-        // sendData(quantity*item.foodprice)
+
 console.log("yahapar")
 console.log(quantity)
 
@@ -33,7 +28,7 @@ console.log(quantity)
         if(quantity>1){
           // totalsum= totalsum-quantity*props
         //   settotalsum(totalsum-props)
-        sendData(quantity-2)
+        sendData(-item.foodprice)
 
         setquantity(quantity-1);}
       }
@@ -48,7 +43,10 @@ console.log(quantity)
     <div className='div_quantity'><button onClick={()=>{quantitysettingminus(item.foodprice)}}>-</button><div>{quantity}</div><button   onClick={()=>{quantitysettingplus(item.foodprice)}}>+</button></div>
 
     <div className='div_cancel'>    <h3 className='h1_foodprice'>${item.foodprice}</h3>
-    <button className='btn_cancel' onClick={()=>dispatch(RemovetoCart(item._id))}>Cancel logo</button>
+    <button className='btn_cancel' onClick={()=>{
+    const t=quantity*item.foodprice;
+    sendData(-t);setquantity(1)
+    dispatch(RemovetoCart(item._id))}}>Cancel logo</button>
     </div>
 </div>
 </div>
